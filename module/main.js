@@ -14,10 +14,10 @@ Hooks.once("init", async function () {
 
 	// Register sheet application classes
 	foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
-	foundry.documents.collections.Actors.registerSheet("YeahNoFerSure", YeahNoFerSureActorSheet, { label: "Yeah No Fer Sure Character Sheet (Default)", makeDefault: true });
+	foundry.documents.collections.Actors.registerSheet("yeahnofersure", YeahNoFerSureActorSheet, { label: "Yeah No Fer Sure Character Sheet (Default)", makeDefault: true });
 
 	foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
-	foundry.documents.collections.Items.registerSheet("YeahNoFerSure", YeahNoFerSureItemSheet, { label: "Yeah No Fer Sure Item Sheet (Default)", makeDefault: true });
+	foundry.documents.collections.Items.registerSheet("yeahnofersure", YeahNoFerSureItemSheet, { label: "Yeah No Fer Sure Item Sheet (Default)", makeDefault: true });
 
 	Handlebars.registerHelper("removeProperty", function (obj, property) {
 		delete obj[property];

@@ -8,8 +8,8 @@ export class YeahNoFerSureActorSheet extends foundry.appv1.sheets.ActorSheet {
 	/** @override */
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
-			classes: ["yeahnofersure", "sheet", "actor"],
-			template: "systems/honey-heist/templates/actor-sheet.html",
+			classes: ["yeah-no-fer-sure", "sheet", "actor"],
+			template: "systems/yeah-no-fer-sure/templates/actor-sheet.html",
 			width: 750,
 			height: 625,
 			scrollY: [ "hh-item-list" ],
