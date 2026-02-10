@@ -173,7 +173,7 @@ input[type="datetime-local"] {
 }
 .yeahnofersure .sheet-panel #stat-panel #stat-yeah-no,
 .yeahnofersure .sheet-panel #stat-panel #stat-no-yeah {
-  grid-area: no-yeah;
+  grid-area: noyeah;
   gap: 0;
   margin-top: -10px;
   display: grid;
@@ -183,10 +183,10 @@ input[type="datetime-local"] {
   align-items: center;
 }
 .yeahnofersure .sheet-panel #stat-panel #stat-yeah-no {
-  grid-area: yeah-no;
+  grid-area: yeahno;
 }
 .yeahnofersure .sheet-panel #stat-panel #stat-no-yeah {
-  grid-area: no-yeah;
+  grid-area: noyeah;
 }
 .yeahnofersure .sheet-panel #stat-panel .stat-title {
   grid-area: title;
