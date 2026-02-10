@@ -1,23 +1,23 @@
-import { HoneyHeistActor } from "./actor.js";
-import { HoneyHeistActorSheet } from "./actor-sheet.js";
-import { HoneyHeistItemSheet } from "./item-sheet.js";
+import { YeahNoFerSureActor } from "./actor.js";
+import { YeahNoFerSureActorSheet } from "./actor-sheet.js";
+import { YeahNoFerSureItemSheet } from "./item-sheet.js";
 
 Hooks.once("init", async function () {
-	console.log(`HoneyHeist: Initializing`);
+	console.log(`YeahNoFerSure: Initializing`);
 
 	// Define custom Entity classes
 	if (foundry.utils.isNewerVersion(game.data.version, "0.8.0")) {
-		CONFIG.Actor.documentClass = HoneyHeistActor;
+		CONFIG.Actor.documentClass = YeahNoFerSureActor;
 	} else {
-		CONFIG.Actor.entityClass = HoneyHeistActor;
+		CONFIG.Actor.entityClass = YeahNoFerSureActor;
 	}
 
 	// Register sheet application classes
 	foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
-	foundry.documents.collections.Actors.registerSheet("honeyheist", HoneyHeistActorSheet, { label: "Honey Heist Character Sheet (Default)", makeDefault: true });
+	foundry.documents.collections.Actors.registerSheet("YeahNoFerSure", YeahNoFerSureActorSheet, { label: "Yeah No Fer Sure Character Sheet (Default)", makeDefault: true });
 
 	foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
-	foundry.documents.collections.Items.registerSheet("honeyheist", HoneyHeistItemSheet, { label: "Honey Heist Item Sheet (Default)", makeDefault: true });
+	foundry.documents.collections.Items.registerSheet("YeahNoFerSure", YeahNoFerSureItemSheet, { label: "Yeah No Fer Sure Item Sheet (Default)", makeDefault: true });
 
 	Handlebars.registerHelper("removeProperty", function (obj, property) {
 		delete obj[property];
@@ -60,29 +60,17 @@ Hooks.once("ready", async function () {
 	RollTable.create(rollTablesToAdd);
 });
 
-Hooks.on("renderHoneyHeistActorSheet", (ev) => {
+Hooks.on("renderYeahNoFerSureActorSheet", (ev) => {
 	// Color a stat red if it's value is six.
 	const root = ev.element[0];
-	const bearStatElement = root.querySelector("#stat-bear .stat-value");
-	const criminalStatElement = root.querySelector("#stat-criminal .stat-value");
-	let bearVal = parseInt(bearStatElement.value, 10);
-	let criminalVal = parseInt(criminalStatElement.value, 10);
+	const yeahNoStatElement = root.querySelector("#stat-yeah-no .stat-value");
+	const noYeahStatElement = root.querySelector("#stat-no-yeah .stat-value");
+	let yeahNoVal = parseInt(yeahNoStatElement.value, 10);
+	let noYeahVal = parseInt(noYeahStatElement.value, 10);
 
-	if (bearVal === 6) {
-		bearStatElement.classList.add("error-red");
-	} else if (criminalVal === 6) {
-		criminalStatElement.classList.add("error-red");
-	}
-
-	// Show the extra hat options if the initial hat stat is 'roll-twice'.
-	const hatRollElement = root.querySelector("#hat-roll");
-	if (hatRollElement.value === "roll-twice") {
-		for (const elem of root.querySelectorAll(".hat2")) {
-			elem.style.display = "";
-		}
-	} else {
-		for (const elem of root.querySelectorAll(".hat2")) {
-			elem.style.display = "none";
-		}
+	if (yeahNoVal === 6) {
+		yeahNoStatElement.classList.add("error-red");
+	} else if (noYeahVal === 6) {
+		noYeahStatElement.classList.add("error-red");
 	}
 });

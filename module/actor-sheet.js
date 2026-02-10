@@ -4,11 +4,11 @@
  */
 
 
-export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
+export class YeahNoFerSureActorSheet extends foundry.appv1.sheets.ActorSheet {
 	/** @override */
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
-			classes: ["honeyheist", "sheet", "actor"],
+			classes: ["yeahnofersure", "sheet", "actor"],
 			template: "systems/honey-heist/templates/actor-sheet.html",
 			width: 750,
 			height: 625,
@@ -63,15 +63,15 @@ export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
 		});
 
 		html.find(".stat-button").click((ev) => {
-			const isBearRoll = this._isBearRoll(ev.currentTarget);
-			const updateValue = isBearRoll ? 1 : -1;
-			this._updateStatsAsync(updateValue, null, isBearRoll).then((isEnd) => {
+			const isYeahNoRoll = this._isYeahNoRoll(ev.currentTarget);
+			const updateValue = isYeahNoRoll ? 1 : -1;
+			this._updateStatsAsync(updateValue, null, isYeahNoRoll).then((isEnd) => {
 
 				if (!isEnd) {
 					ChatMessage.create({
-						content: isBearRoll
-							? game.i18n.localize("HH.CriminalToBear")
-							: game.i18n.localize("HH.BearToCriminal"),
+						content: isYeahNoRoll
+							? game.i18n.localize("HH.NoYeahToYeahNo")
+							: game.i18n.localize("HH.YeahNoToNoYeah"),
 						user: game.user.id,
 						speaker: ChatMessage.getSpeaker({ actor: this.actor })
 					});
@@ -80,7 +80,7 @@ export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
 		});
 
 		html.find(".stat-roll-single, .stat-roll-double").click(async (ev) => {
-			const isBearRoll = this._isBearRoll(ev.currentTarget);
+			const isYeahNoRoll = this._isYeahNoRoll(ev.currentTarget);
 			const roller = $(ev.currentTarget);
 			const input = roller.siblings(".stat-value").get(0);
 			const currentValue = parseInt(input.value);
@@ -89,17 +89,17 @@ export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
 			const isSuccess = roll.total <= currentValue;
 			const rollSuccess = isSuccess ? game.i18n.localize("HH.Success") : game.i18n.localize("HH.Failed");
 			const actionMessage = isSuccess
-				? game.i18n.localize("HH.GreedMessage")
-				: game.i18n.localize("HH.FrustrationMessage");
-			const chatMessage = isBearRoll
-				? `${game.i18n.localize("HH.RollForBear")}: ${rollSuccess}. <p>${actionMessage}</p>`
-				: `${game.i18n.localize("HH.RollForCriminal")}: ${rollSuccess}. <p>${actionMessage}</p?`;
+				? game.i18n.localize("HH.PartyHardMessage")
+				: game.i18n.localize("HH.ChillOutMessage");
+			const chatMessage = isYeahNoRoll
+				? `${game.i18n.localize("HH.RollForYeahNo")}: ${rollSuccess}. <p>${actionMessage}</p>`
+				: `${game.i18n.localize("HH.RollForNoYeah")}: ${rollSuccess}. <p>${actionMessage}</p?`;
 
 			// FRUSTRATION: When the plan fails and you run into
-			// difficulty, move one point from Criminal into Bear.
+			// difficulty, move one point from NoYeah into YeahNo.
 			// GREED: When the plan goes off without a hitch, move
-			// one point from Bear into Criminal.
-			const isEnd = await this._updateStatsAsync(isSuccess ? -1 : 1, roll, isBearRoll);
+			// one point from YeahNo into NoYeah.
+			const isEnd = await this._updateStatsAsync(isSuccess ? -1 : 1, roll, isYeahNoRoll);
 			
 			if (!isEnd) {
 				roll.toMessage({
@@ -151,7 +151,7 @@ export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
 			const messageData = {
 				speaker: ChatMessage.getSpeaker({actor: this.actor}),
 				content: `
-					<div class="honeyheist">
+					<div class="yeahnofersure">
 						<div class="chatItem flexrow">
 							<div class="item-image" tabindex="0" aria-label="${item.name}" style="background-image: url('${item.img}')"></div>
 							<h4>${item.name}</h4>
@@ -164,65 +164,65 @@ export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
 		})
 	}
 
-	async _updateStatsAsync(offset, roll, isBearRoll) {
-		let bearStat = this.actor.system.stats.bear;
-		let criminalStat = this.actor.system.stats.criminal;
+	async _updateStatsAsync(offset, roll, isYeahNoRoll) {
+		let YeahNoStat = this.actor.system.stats.YeahNo;
+		let NoYeahStat = this.actor.system.stats.NoYeah;
 
 		// These stat values should always be numbers, but sometimes 
 		// they get returned as strings and I don't know why.
-		if (typeof bearStat === "string") {
-			bearStat = parseInt(bearStat);
+		if (typeof YeahNoStat === "string") {
+			YeahNoStat = parseInt(YeahNoStat);
 		}
 
-		if (typeof criminalStat === "string") {
-			criminalStat = parseInt(criminalStat);
+		if (typeof NoYeahStat === "string") {
+			NoYeahStat = parseInt(NoYeahStat);
 		}
 
-		let endResult = (isBearRoll && bearStat === 6) || (!isBearRoll && criminalStat === 6);
+		let endResult = (isYeahNoRoll && YeahNoStat === 6) || (!isYeahNoRoll && NoYeahStat === 6);
 
 		if (!endResult) {
 			// Adjust the current values based on the given offset.
-			bearStat += offset;
-			criminalStat -= offset;
+			YeahNoStat += offset;
+			NoYeahStat -= offset;
 
 			// Only need to check one or the other stat value to make sure they're in the 0-6 range.
-			if (bearStat >= 0 && bearStat <= 6) {
+			if (YeahNoStat >= 0 && YeahNoStat <= 6) {
 				// Set the new values in the sheet.
-				await this.actor.update({ "system.stats.bear": bearStat });
-				await this.actor.update({ "system.stats.criminal": criminalStat });
+				await this.actor.update({ "system.stats.YeahNo": YeahNoStat });
+				await this.actor.update({ "system.stats.NoYeah": NoYeahStat });
 
-				// Check to see if either the bear or criminal stat has reached 6,
-				// which means it's the end for this bear.
-				if (bearStat === 6) {
+				// Check to see if either the YeahNo or NoYeah stat has reached 6,
+				// which means it's the end for this YeahNo.
+				if (YeahNoStat === 6) {
 					endResult = true;
 
 					if (roll) {
 						roll.toMessage({
 							user: game.user.id,  // avoid deprecation warning, backwards compatible
 							speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-							flavor: game.i18n.localize("HH.BearEndMessage")
+							flavor: game.i18n.localize("HH.YeahNoEndMessage")
 						});
 					} else {
 						ChatMessage.create({
 							user: game.user.id,  // avoid deprecation warning, backwards compatible
 							speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-							content: game.i18n.localize("HH.BearEndMessage")
+							content: game.i18n.localize("HH.YeahNoEndMessage")
 						});
 					}
-				} else if (criminalStat === 6) {
+				} else if (NoYeahStat === 6) {
 					endResult = true;
 
 					if (roll) {
 						roll.toMessage({
 							user: game.user.id,  // avoid deprecation warning, backwards compatible
 							speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-							flavor: game.i18n.localize("HH.CriminalEndMessage")
+							flavor: game.i18n.localize("HH.NoYeahEndMessage")
 						});
 					} else {
 						ChatMessage.create({
 							user: game.user.id,  // avoid deprecation warning, backwards compatible
 							speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-							content: game.i18n.localize("HH.CriminalEndMessage")
+							content: game.i18n.localize("HH.NoYeahEndMessage")
 						});
 					}
 				}
@@ -232,7 +232,7 @@ export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
 		return endResult;
 	}
 
-	_isBearRoll(element) {
-		return element.parentElement.id === "stat-bear";
+	_isYeahNoRoll(element) {
+		return element.parentElement.id === "stat-YeahNo";
 	}
 }

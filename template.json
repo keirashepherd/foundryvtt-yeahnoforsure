@@ -2,154 +2,104 @@
 	"Actor": {
 		"types": [ "character" ],
 		"character": {
-			"biography": "<p>It’s Honeycon. You are going to undertake the greatest heist the world has ever seen. Two Things – </p><p>One: You have a complex plan that requires precise timing.</p><p>Two: You are a GODDAMN BEAR.</p><p>You're not a talking bear, per se, but you can sort of mangle human speech through your bear mouth, maybe?</p>",
+			"biography": "<p>You are a Canadian in your early-to-mid twenties, and Buddy is having another one of their famous house parties. Bring your friends, party smart, have a great time, and navigate convos with the ultimate Canadian phrases: 'Yeah, No' and 'No, Yeah'</p>",
 			"stats": {
-				"bear": 3,
-				"criminal": 3
+				"yeah no": 3,
+				"no yeah": 3
 			},
-			"descriptor": "",
-			"bear-type": "",
-			"role": "",
-			"hat": "",
-			"hat2a": "",
-			"hat2b": "",
-			"descriptors": {
+			"cool-thing": "",
+			"hang-up": "",
+			"item": "",
+			"cool-things": {
 				"none": {
 					"label": "Roll",
 					"dtype": "String"
 				},
-				"rookie": {
-					"label": "Rookie",
+				"funny": {
+					"label": "You're like, really funny",
 					"dtype": "String"
 				},
-				"washed-up": {
-					"label": "Washed-up",
+				"roommate": {
+					"label": "you're Buddy's roommate",
 					"dtype": "String"
 				},
-				"retired": {
-					"label": "Retired",
+				"band": {
+					"label": "you're in an indie band",
 					"dtype": "String"
 				},
-				"unhinged": {
-					"label": "Unhinged",
+				"butterfly": {
+					"label": "you know everyone here",
 					"dtype": "String"
 				},
-				"slick": {
-					"label": "Slick",
+				"trickshot": {
+					"label": "you're a trickshot master",
 					"dtype": "String"
 				},
-				"incompetent": {
-					"label": "Incompetent",
+				"north": {
+					"label": "you're from up north",
 					"dtype": "String"
 				}
 			},
-			"bear-types": {
+			"hang-ups": {
 				"none": {
 					"label": "Roll",
 					"dtype": "String"
 				},
-				"grizzly": {
-					"label": "Grizzly (Terrify)",
+				"ex": {
+					"label": "your ex is here (bad breakup)",
 					"dtype": "String"
 				},
-				"polar": {
-					"label": "Polar (Swim)",
+				"sick": {
+					"label": "you called in sick to be here",
 					"dtype": "String"
 				},
-				"panda": {
-					"label": "Panda (Eat anything that looks like bamboo)",
+				"hungover": {
+					"label": "you're injured or hungover",
 					"dtype": "String"
 				},
-				"black": {
-					"label": "Black (Climb)",
+				"return": {
+					"label": "Buddy won't return your ____",
 					"dtype": "String"
 				},
-				"sun": {
-					"label": "Sun (Sense honey)",
+				"battery": {
+					"label": "you have a low social battery",
 					"dtype": "String"
 				},
-				"honey-badger": {
-					"label": "Honey Badger (Carnage)",
+				"thirty": {
+					"label": "you're secretly 30 years old",
 					"dtype": "String"
 				}
 			},
-			"roles": {
+			"items": {
 				"none": {
 					"label": "Roll",
 					"dtype": "String"
 				},
-				"muscle": {
-					"label": "Muscle",
+				"tunes": {
+					"label": "good tunes",
 					"dtype": "String"
 				},
-				"brains": {
-					"label": "Brains",
+				"games": {
+					"label": "party games",
 					"dtype": "String"
 				},
-				"driver": {
-					"label": "Driver",
+				"mickey": {
+					"label": "a mickey or two (alcohol) ",
 					"dtype": "String"
 				},
-				"hacker": {
-					"label": "Hacker",
+				"brownies": {
+					"label": "brownies (or similar)",
 					"dtype": "String"
 				},
-				"thief": {
-					"label": "Thief",
+				"weed": {
+					"label": "\"brownies\" (or similar)",
 					"dtype": "String"
 				},
-				"face": {
-					"label": "Face",
-					"dtype": "String"
-				}
-			},
-			"hats": {
-				"none": {
-					"label": "Roll",
-					"dtype": "String"
-				},
-				"tribly": {
-					"label": "Tribly",
-					"dtype": "String"
-				},
-				"top": {
-					"label": "Top",
-					"dtype": "String"
-				},
-				"bowler": {
-					"label": "Bowler",
-					"dtype": "String"
-				},
-				"flat-cap": {
-					"label": "Flat Cap",
-					"dtype": "String"
-				},
-				"cowboy": {
-					"label": "Cowboy",
-					"dtype": "String"
-				},
-				"fez": {
-					"label": "Fez",
-					"dtype": "String"
-				},
-				"crown": {
-					"label": "Crown",
-					"dtype": "String"
-				},
-				"roll-twice": {
-					"label": "Roll Twice!",
+				"car": {
+					"label": "a car (don't drink and drive)",
 					"dtype": "String"
 				}
 			}
-		}
-	},
-	"Item": {
-		"types": [ "item" ],
-		"item": {
-			"description": "",
-			"quantity": 1,
-			"weight": 0,
-			"attributes": {}
 		}
 	}
 }

@@ -5,7 +5,7 @@ const less = require('gulp-less');
 /*  Compile LESS
 /* ----------------------------------------- */
 
-const HONEYHEIST_LESS = ["styles/*.less"];
+const YEAHNOFERSURE_LESS = ["styles/*.less"];
 function compileLESS() {
   return gulp.src("styles/main.less")
     .pipe(less())
@@ -18,7 +18,7 @@ const css = gulp.series(compileLESS);
 /* ----------------------------------------- */
 
 function watchUpdates() {
-  gulp.watch(HONEYHEIST_LESS, css);
+  gulp.watch(YEAHNOFERSURE_LESS, css);
 }
 
 /* ----------------------------------------- */

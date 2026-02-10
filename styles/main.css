@@ -139,18 +139,18 @@ input[type="datetime-local"] {
 .error-red {
   color: darkred !important;
 }
-.honeyheist .window-content {
+.yeahnofersure .window-content {
   color: @textColor;
   height: 100%;
   padding: 10px;
   overflow-y: auto;
 }
-.honeyheist .sheet-panel {
+.yeahnofersure .sheet-panel {
   display: grid;
   grid-template-rows: max-content max-content 1fr;
   gap: 10px;
 }
-.honeyheist .sheet-panel #stat-panel {
+.yeahnofersure .sheet-panel #stat-panel {
   height: 100px;
   display: grid;
   grid-template-columns: 100px 1fr 1fr;
@@ -158,21 +158,21 @@ input[type="datetime-local"] {
   grid-template-areas: "portrait name name" "portrait bear criminal";
   gap: 10px;
 }
-.honeyheist .sheet-panel #stat-panel .profile-img {
+.yeahnofersure .sheet-panel #stat-panel .profile-img {
   grid-area: portrait;
   height: 100px;
 }
-.honeyheist .sheet-panel #stat-panel .char-name {
+.yeahnofersure .sheet-panel #stat-panel .char-name {
   grid-area: name;
   border-bottom: 0;
 }
-.honeyheist .sheet-panel #stat-panel .char-name input {
+.yeahnofersure .sheet-panel #stat-panel .char-name input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.honeyheist .sheet-panel #stat-panel #stat-bear,
-.honeyheist .sheet-panel #stat-panel #stat-criminal {
+.yeahnofersure .sheet-panel #stat-panel#stat-yeah-no,
+.yeahnofersure .sheet-panel #stat-panel#stat-no-yeah {
   grid-area: bear;
   gap: 0;
   margin-top: -10px;
@@ -182,28 +182,28 @@ input[type="datetime-local"] {
   grid-template-areas: "title title title icon" "value die dice .";
   align-items: center;
 }
-.honeyheist .sheet-panel #stat-panel #stat-bear {
+.yeahnofersure .sheet-panel #stat-panel#stat-yeah-no {
   grid-area: bear;
 }
-.honeyheist .sheet-panel #stat-panel #stat-criminal {
+.yeahnofersure .sheet-panel #stat-panel#stat-no-yeah {
   grid-area: criminal;
 }
-.honeyheist .sheet-panel #stat-panel .stat-title {
+.yeahnofersure .sheet-panel #stat-panel .stat-title {
   grid-area: title;
 }
-.honeyheist .sheet-panel #stat-panel .stat-button {
+.yeahnofersure .sheet-panel #stat-panel .stat-button {
   height: 40px;
   grid-area: icon;
 }
-.honeyheist .sheet-panel #stat-panel .stat-roll-single {
+.yeahnofersure .sheet-panel #stat-panel .stat-roll-single {
   height: 35px;
   grid-area: die;
 }
-.honeyheist .sheet-panel #stat-panel .stat-roll-double {
+.yeahnofersure .sheet-panel #stat-panel .stat-roll-double {
   height: 35px;
   grid-area: dice;
 }
-.honeyheist .sheet-panel #stat-panel .stat-value {
+.yeahnofersure .sheet-panel #stat-panel .stat-value {
   font-size: 45px;
   font-family: Title;
   height: 50px;
@@ -213,76 +213,76 @@ input[type="datetime-local"] {
   background: transparent;
   grid-area: value;
 }
-.honeyheist .sheet-panel #attributes-panel,
-.honeyheist .sheet-panel #bio-panel {
+.yeahnofersure .sheet-panel #attributes-panel,
+.yeahnofersure .sheet-panel #bio-panel {
   max-height: 260px;
 }
-.honeyheist .sheet-panel #attributes-panel {
+.yeahnofersure .sheet-panel #attributes-panel {
   margin-right: 0.5rem;
 }
-.honeyheist .sheet-panel #attributes-panel #attributes {
+.yeahnofersure .sheet-panel #attributes-panel #attributes {
   display: grid;
   gap: 10px;
   margin-top: 10px;
 }
-.honeyheist .sheet-panel #attributes-panel .attribute {
+.yeahnofersure .sheet-panel #attributes-panel .attribute {
   align-items: center;
   display: grid;
   gap: 10px;
   grid-template-columns: 72px 200px 1fr;
 }
-.honeyheist .sheet-panel #bio-panel {
+.yeahnofersure .sheet-panel #bio-panel {
   display: grid;
   grid-template-rows: max-content 1fr;
   flex: 1;
 }
-.honeyheist .sheet-panel #bio-panel .editor {
+.yeahnofersure .sheet-panel #bio-panel .editor {
   min-height: 150px;
   max-height: 260px;
   overflow-y: auto;
 }
-.honeyheist .sheet-panel #middle-panel {
+.yeahnofersure .sheet-panel #middle-panel {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin-top: 14px;
 }
-.honeyheist .sheet-panel #items-panel .hh-item-list {
+.yeahnofersure .sheet-panel #items-panel .hh-item-list {
   overflow-y: auto;
   height: 175px;
 }
-.honeyheist .sheet-panel #items-panel .add-item {
+.yeahnofersure .sheet-panel #items-panel .add-item {
   font-size: 0.7rem;
   align-self: center;
 }
-.honeyheist .sheet-panel #items-panel .add-item:hover {
+.yeahnofersure .sheet-panel #items-panel .add-item:hover {
   text-shadow: 2px 2px 4px var(--color-text-dark-5);
   cursor: pointer;
 }
-.honeyheist .sheet-panel #items-panel ol {
+.yeahnofersure .sheet-panel #items-panel ol {
   list-style: none;
   margin: 0;
   overflow-y: auto;
   scrollbar-width: thin;
   padding: 0 5px;
 }
-.honeyheist .sheet-panel #items-panel .items-header {
+.yeahnofersure .sheet-panel #items-panel .items-header {
   border-bottom: 1px solid var(--color-border-dark-5);
 }
-.honeyheist .sheet-panel #items-panel .items-header .item-name {
+.yeahnofersure .sheet-panel #items-panel .items-header .item-name {
   padding-left: 5px;
   text-align: left;
   border-bottom: none;
 }
-.honeyheist .sheet-panel #items-panel .item-roll {
+.yeahnofersure .sheet-panel #items-panel .item-roll {
   cursor: pointer;
 }
-.honeyheist .sheet-panel #items-panel .item-name {
+.yeahnofersure .sheet-panel #items-panel .item-name {
   margin: 0;
   overflow: hidden;
   align-items: center;
 }
-.honeyheist .sheet-panel #items-panel .item-name .item-image {
+.yeahnofersure .sheet-panel #items-panel .item-name .item-image {
   flex: 0 0 30px;
   height: 30px;
   width: 30px;
@@ -290,11 +290,11 @@ input[type="datetime-local"] {
   background-position: 50% 0;
   border: none;
 }
-.honeyheist .sheet-panel #items-panel .item-controls {
+.yeahnofersure .sheet-panel #items-panel .item-controls {
   flex: 0 0 68px;
   align-items: center;
 }
-.honeyheist .chatItem .item-image {
+.yeahnofersure .chatItem .item-image {
   flex: 0 0 15px;
   height: 15px;
   width: 15px;

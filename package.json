@@ -1,7 +1,7 @@
 {
-  "name": "honey-heist",
+  "name": "yeah-no-for-sure",
   "version": "1.0.0",
-  "description": "CSS compiler for the Honey Heist system",
+  "description": "CSS compiler for the Yeah No For Sure system",
   "scripts": {
     "css": "gulp css",
     "watch": "gulp",
