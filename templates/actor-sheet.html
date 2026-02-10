@@ -3,11 +3,11 @@
   <div id="stat-panel">
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
     <h1 class="char-name">
-      <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'HH.BearName'}}" />
+      <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'HH.YeahNoName'}}" />
     </h1>
     {{!-- Stats Block --}}
-    <div id="stat-">
-      <h2 class="stat-title">Yeah No</h2>
+    <div id="stat-yeahno">
+      <h2 class="stat-title">YEAH NO</h2>
       <img class="stat-button no-border expand" title="{{localize 'HH.MoveToYeahNoTooltip'}}"
         src="/systems/yeah-no-fer-sure/resources/icons/bear.svg" />
       <input class="stat-value" name="stats.yeahno" data-type="Number" value="{{system.stats.yeahno}}"
@@ -18,7 +18,7 @@
         data-roll="2d6kl" src="/systems/yeah-no-fer-sure/resources/icons/die-six-double.svg" />
     </div>
     <div id="stat-noyeah">
-      <h2 class="stat-title">No Yeah</h2>
+      <h2 class="stat-title">NO YEAH</h2>
       <img class="stat-button no-border expand" title="{{localize 'HH.MoveToNoYeahTooltip'}}"
         src="/systems/yeah-no-fer-sure/resources/icons/criminal.svg" />
       <input class="stat-value" name="stats.noyeah" data-type="Number" value="{{system.stats.noyeah}}"

@@ -155,7 +155,7 @@ input[type="datetime-local"] {
   display: grid;
   grid-template-columns: 100px 1fr 1fr;
   grid-template-rows: 40px 1fr;
-  grid-template-areas: "portrait name name" "portrait bear criminal";
+  grid-template-areas: "portrait name name" "portrait yeahno noyeah";
   gap: 10px;
 }
 .yeahnofersure .sheet-panel #stat-panel .profile-img {
@@ -173,7 +173,7 @@ input[type="datetime-local"] {
 }
 .yeahnofersure .sheet-panel #stat-panel #stat-yeahno,
 .yeahnofersure .sheet-panel #stat-panel #stat-noyeah {
-  grid-area: noyeah;
+  grid-area: yeahno;
   gap: 0;
   margin-top: -10px;
   display: grid;
