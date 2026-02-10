@@ -32,12 +32,12 @@ Hooks.once("ready", async function () {
 	const existingRollTables = [];
 	const rollTablesToAdd = [];
 	const rollTables = {
-		Organizer: "/systems/honey-heist/resources/roll-tables/fvtt-RollTable-Organizer.json",
-		Setting: "/systems/honey-heist/resources/roll-tables/fvtt-RollTable-Setting.json",
-		Location: "/systems/honey-heist/resources/roll-tables/fvtt-RollTable-Location.json",
-		Prize: "/systems/honey-heist/resources/roll-tables/fvtt-RollTable-Prize.json",
-		Security: "/systems/honey-heist/resources/roll-tables/fvtt-RollTable-Security.json",
-		Twist: "/systems/honey-heist/resources/roll-tables/fvtt-RollTable-Twist.json"
+		Organizer: "/systems/yeah-no-fer-sure/resources/roll-tables/fvtt-RollTable-Organizer.json",
+		Setting: "/systems/yeah-no-fer-sure/resources/roll-tables/fvtt-RollTable-Setting.json",
+		Location: "/systems/yeah-no-fer-sure/resources/roll-tables/fvtt-RollTable-Location.json",
+		Prize: "/systems/yeah-no-fer-sure/resources/roll-tables/fvtt-RollTable-Prize.json",
+		Security: "/systems/yeah-no-fer-sure/resources/roll-tables/fvtt-RollTable-Security.json",
+		Twist: "/systems/yeah-no-fer-sure/resources/roll-tables/fvtt-RollTable-Twist.json"
 	};
 
 	if (foundry.utils.isNewerVersion(game.data.version, "0.8.0")) {

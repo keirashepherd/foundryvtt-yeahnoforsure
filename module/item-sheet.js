@@ -8,7 +8,7 @@ export class YeahNoFerSureItemSheet extends foundry.appv1.sheets.ItemSheet {
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["yeahnofersure", "sheet", "item"],
-			template: "systems/honey-heist/templates/item-sheet.html",
+			template: "systems/yeah-no-fer-sure/templates/item-sheet.html",
 			width: 550,
 			height: 400
 		});

@@ -3,8 +3,8 @@
   "sort": 100001,
   "flags": {
     "exportSource": {
-      "world": "test-honey-heist",
-      "system": "honey-heist",
+      "world": "test-yeah-no-fer-sure",
+      "system": "yeah-no-fer-sure",
       "coreVersion": "0.6.6",
       "systemVersion": 0.1
     }
