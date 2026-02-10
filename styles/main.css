@@ -171,8 +171,8 @@ input[type="datetime-local"] {
   height: 100%;
   margin: 0;
 }
-.yeahnofersure .sheet-panel #stat-panel #stat-yeah-no,
-.yeahnofersure .sheet-panel #stat-panel #stat-no-yeah {
+.yeahnofersure .sheet-panel #stat-panel #stat-yeahno,
+.yeahnofersure .sheet-panel #stat-panel #stat-noyeah {
   grid-area: noyeah;
   gap: 0;
   margin-top: -10px;
@@ -182,10 +182,10 @@ input[type="datetime-local"] {
   grid-template-areas: "title title title icon" "value die dice .";
   align-items: center;
 }
-.yeahnofersure .sheet-panel #stat-panel #stat-yeah-no {
+.yeahnofersure .sheet-panel #stat-panel #stat-yeahno {
   grid-area: yeahno;
 }
-.yeahnofersure .sheet-panel #stat-panel #stat-no-yeah {
+.yeahnofersure .sheet-panel #stat-panel #stat-noyeah {
   grid-area: noyeah;
 }
 .yeahnofersure .sheet-panel #stat-panel .stat-title {

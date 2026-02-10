@@ -63,8 +63,8 @@ Hooks.once("ready", async function () {
 Hooks.on("renderYeahNoFerSureActorSheet", (ev) => {
 	// Color a stat red if it's value is six.
 	const root = ev.element[0];
-	const yeahNoStatElement = root.querySelector("#stat-yeah-no .stat-value");
-	const noYeahStatElement = root.querySelector("#stat-no-yeah .stat-value");
+	const yeahNoStatElement = root.querySelector("#stat-yeahno .stat-value");
+	const noYeahStatElement = root.querySelector("#stat-noyeah .stat-value");
 	let yeahNoVal = parseInt(yeahNoStatElement.value, 10);
 	let noYeahVal = parseInt(noYeahStatElement.value, 10);
 

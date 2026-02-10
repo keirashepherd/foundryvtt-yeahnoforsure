@@ -6,22 +6,22 @@
       <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'HH.BearName'}}" />
     </h1>
     {{!-- Stats Block --}}
-    <div id="stat-yeah-no">
+    <div id="stat-">
       <h2 class="stat-title">Yeah No</h2>
       <img class="stat-button no-border expand" title="{{localize 'HH.MoveToYeahNoTooltip'}}"
         src="/systems/yeah-no-fer-sure/resources/icons/bear.svg" />
-      <input class="stat-value" name="stats.yeah-no" data-type="Number" value="{{system.stats.yeah-no}}"
+      <input class="stat-value" name="stats.yeahno" data-type="Number" value="{{system.stats.yeahno}}"
         readonly="readonly" />
       <img class="stat-roll-single expand no-border" title="{{localize 'HH.YeahNoRollTooltip'}}" data-roll="1d6"
         src="/systems/yeah-no-fer-sure/resources/icons/die-six.svg" />
       <img class="stat-roll-double expand no-border" title="{{localize 'HH.YeahNoRollWithSkillTooltip'}}"
         data-roll="2d6kl" src="/systems/yeah-no-fer-sure/resources/icons/die-six-double.svg" />
     </div>
-    <div id="stat-no-yeah">
+    <div id="stat-noyeah">
       <h2 class="stat-title">No Yeah</h2>
       <img class="stat-button no-border expand" title="{{localize 'HH.MoveToNoYeahTooltip'}}"
         src="/systems/yeah-no-fer-sure/resources/icons/criminal.svg" />
-      <input class="stat-value" name="stats.no-yeah" data-type="Number" value="{{system.stats.no-yeah}}"
+      <input class="stat-value" name="stats.noyeah" data-type="Number" value="{{system.stats.noyeah}}"
         readonly="readonly" />
       <img class="stat-roll-single expand no-border" data-roll="1d6" title="{{localize 'HH.NoYeahRollTooltip'}}"
         src="/systems/yeah-no-fer-sure/resources/icons/die-six.svg" />

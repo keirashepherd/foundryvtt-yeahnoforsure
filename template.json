@@ -4,8 +4,8 @@
 		"character": {
 			"biography": "<p>You are a Canadian in your early-to-mid twenties, and Buddy is having another one of their famous house parties. Bring your friends, party smart, have a great time, and navigate convos with the ultimate Canadian phrases: 'Yeah, No' and 'No, Yeah'</p>",
 			"stats": {
-				"yeah-no": 3,
-				"no-yeah": 3
+				"yeahno": 3,
+				"noyeah": 3
 			},
 			"cool-thing": "",
 			"hang-up": "",
