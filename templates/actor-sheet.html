@@ -59,12 +59,12 @@
           <img class="attribute-roll expand no-border" data-roll="1d6+1"
             src="/systems/honey-heist/resources/icons/die-six.svg" height="25" width="25" />
         </div>
-        <div class="item">
-          <label>{{localize 'HH.Item'}}</label>
-          <select name="system.item" data-type="String">
-            {{#select system.item}}
-              {{#each system.items as |item key|}}
-                <option value="{{key}}">{{item}}</option>
+        <div class="attribute">
+          <label>{{localize 'HH.BroughtItem'}}</label>
+          <select name="system.brought-item" data-type="String">
+            {{#select system.brought-item}}
+              {{#each system.brought-items as |brought-item key|}}
+                <option value="{{key}}">{{brought-item.label}}</option>
               {{/each}}
             {{/select}}
           </select>

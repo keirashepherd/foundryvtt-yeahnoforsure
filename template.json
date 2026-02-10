@@ -9,7 +9,7 @@
 			},
 			"cool-thing": "",
 			"hang-up": "",
-			"item": "",
+			"brought-item": "",
 			"cool-things": {
 				"none": {
 					"label": "Roll",
@@ -70,7 +70,7 @@
 					"dtype": "String"
 				}
 			},
-			"items": {
+			"brought-items": {
 				"none": {
 					"label": "Roll",
 					"dtype": "String"
