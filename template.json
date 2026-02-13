@@ -79,27 +79,27 @@
 					"dtype": "String"
 				},
 				"muscle": {
-					"label": "Muscle",
+					"label": "good tunes",
 					"dtype": "String"
 				},
 				"brains": {
-					"label": "Brains",
+					"label": "party games",
 					"dtype": "String"
 				},
 				"driver": {
-					"label": "Driver",
+					"label": "a mickey or two",
 					"dtype": "String"
 				},
 				"hacker": {
-					"label": "Hacker",
+					"label": "brownies (or similar)",
 					"dtype": "String"
 				},
 				"thief": {
-					"label": "Thief",
+					"label": "\"brownies\" (or similar)",
 					"dtype": "String"
 				},
 				"face": {
-					"label": "Face",
+					"label": "a car (don't drink and drive)",
 					"dtype": "String"
 				}
 			},
