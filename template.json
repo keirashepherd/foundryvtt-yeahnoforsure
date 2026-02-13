@@ -8,7 +8,7 @@
 				"criminal": 3
 			},
 			"descriptor": "",
-			"bear-type": "",
+			"cool-thing": "",
 			"role": "",
 			"hat": "",
 			"hat2a": "",
@@ -43,7 +43,7 @@
 					"dtype": "String"
 				}
 			},
-			"bear-types": {
+			"cool-things": {
 				"none": {
 					"label": "Roll",
 					"dtype": "String"
