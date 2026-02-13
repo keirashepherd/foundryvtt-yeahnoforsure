@@ -49,27 +49,27 @@
 					"dtype": "String"
 				},
 				"grizzly": {
-					"label": "Grizzly (Terrify)",
+					"label": "you're like really funny",
 					"dtype": "String"
 				},
 				"polar": {
-					"label": "Polar (Swim)",
+					"label": "you're Buddy's roommate",
 					"dtype": "String"
 				},
 				"panda": {
-					"label": "Panda (Eat anything that looks like bamboo)",
+					"label": "you're in an indie band",
 					"dtype": "String"
 				},
 				"black": {
-					"label": "Black (Climb)",
+					"label": "you know everyone here",
 					"dtype": "String"
 				},
 				"sun": {
-					"label": "Sun (Sense honey)",
+					"label": "you're a trickshot master",
 					"dtype": "String"
 				},
 				"honey-badger": {
-					"label": "Honey Badger (Carnage)",
+					"label": "you're from Up North",
 					"dtype": "String"
 				}
 			},
