@@ -28,8 +28,8 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/jbhaywood/foundryvtt-honeyheist/",
-  "manifest": "https://raw.githubusercontent.com/jbhaywood/foundryvtt-honeyheist/master/system.json",
-  "download": "https://github.com/jbhaywood/foundryvtt-honeyheist/archive/v1.72.zip",
+  "url": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/",
+  "manifest": "https://raw.githubusercontent.com/keirashepherd/foundryvtt-yeahnoforsure/keira/simplechange/system.json",
+  "download": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/refs/heads/keira/simplechange.zip",
   "license": "LICENSE.txt"
 }
