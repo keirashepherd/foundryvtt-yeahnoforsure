@@ -19,27 +19,27 @@
 					"dtype": "String"
 				},
 				"rookie": {
-					"label": "Rookie",
+					"label": "your ex is here",
 					"dtype": "String"
 				},
 				"washed-up": {
-					"label": "Washed-up",
+					"label": "you called in sick to be here",
 					"dtype": "String"
 				},
 				"retired": {
-					"label": "Retired",
+					"label": "you're injured or hungover",
 					"dtype": "String"
 				},
 				"unhinged": {
-					"label": "Unhinged",
+					"label": "Buddy won't return your ___",
 					"dtype": "String"
 				},
 				"slick": {
-					"label": "Slick",
+					"label": "you have a low social battery",
 					"dtype": "String"
 				},
 				"incompetent": {
-					"label": "Incompetent",
+					"label": "you're secretly 30 years old",
 					"dtype": "String"
 				}
 			},
