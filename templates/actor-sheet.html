@@ -48,11 +48,11 @@
             src="/systems/honey-heist/resources/icons/die-six.svg" height="25" width="25" />
         </div>
         <div class="attribute">
-          <label>{{localize 'HH.CoolThing'}}</label>
-          <select name="system.cool-thing" data-type="String">
-            {{#select system.cool-thing}}
-              {{#each system.cool-things as |cool-thing key|}}
-                <option value="{{key}}">{{cool-thing.label}}</option>
+          <label>{{localize 'HH.BearType'}}</label>
+          <select name="system.bear-type" data-type="String">
+            {{#select system.bear-type}}
+              {{#each system.bear-types as |bear-type key|}}
+                <option value="{{key}}">{{bear-type.label}}</option>
               {{/each}}
             {{/select}}
           </select>

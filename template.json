@@ -8,7 +8,7 @@
 				"criminal": 3
 			},
 			"descriptor": "",
-			"cool-thing": "",
+			"bear-type": "",
 			"role": "",
 			"hat": "",
 			"hat2a": "",
@@ -43,13 +43,13 @@
 					"dtype": "String"
 				}
 			},
-			"cool-things": {
+			"bear-types": {
 				"none": {
 					"label": "Roll",
 					"dtype": "String"
 				},
 				"grizzly": {
-					"label": "Testing (Terrify)",
+					"label": "Grizzly (Terrify)",
 					"dtype": "String"
 				},
 				"polar": {
