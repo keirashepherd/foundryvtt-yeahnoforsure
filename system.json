@@ -2,7 +2,7 @@
   "id": "yeahnofersure",
   "title": "Yeah No Fer Sure",
   "description": "It's HoneyCon. You are going to undertake the greatest heist the world has ever seen.",
-  "version": "0.5",
+  "version": "0.6",
   "compatibility": {
     "minimum": "10",
     "verified": "13",
@@ -28,7 +28,7 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/tree/keira/simplechange",
+  "url": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/tree/keira/simplechange/",
   "manifest": "https://raw.githubusercontent.com/keirashepherd/foundryvtt-yeahnoforsure/refs/heads/keira/simplechange/system.json",
   "download": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/archive/refs/heads/keira/simplechange.zip",
   "license": "LICENSE.txt"
