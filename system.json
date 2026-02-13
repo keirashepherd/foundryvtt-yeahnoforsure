@@ -28,8 +28,8 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/",
-  "manifest": "https://raw.githubusercontent.com/keirashepherd/foundryvtt-yeahnoforsure/keira/simplechange/system.json",
-  "download": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/refs/heads/keira/simplechange.zip",
+  "url": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/tree/keira/simplechange",
+  "manifest": "https://raw.githubusercontent.com/keirashepherd/foundryvtt-yeahnoforsure/refs/heads/keira/simplechange/system.json",
+  "download": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/archive/refs/heads/keira/simplechange.zip",
   "license": "LICENSE.txt"
 }
