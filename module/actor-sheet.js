@@ -9,7 +9,7 @@ export class HoneyHeistActorSheet extends foundry.appv1.sheets.ActorSheet {
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["honeyheist", "sheet", "actor"],
-			template: "systems/honey-heist/templates/actor-sheet.html",
+			template: "systems/yeahnofersure/templates/actor-sheet2.html",
 			width: 750,
 			height: 625,
 			scrollY: [ "hh-item-list" ],

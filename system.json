@@ -1,8 +1,8 @@
 {
-  "id": "honey-heist",
-  "title": "Honey Heist",
+  "id": "yeahnofersure",
+  "title": "Yeah No Fer Sure",
   "description": "It's HoneyCon. You are going to undertake the greatest heist the world has ever seen.",
-  "version": "1.72",
+  "version": "0.20",
   "compatibility": {
     "minimum": "10",
     "verified": "13",
@@ -28,8 +28,8 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/jbhaywood/foundryvtt-honeyheist/",
-  "manifest": "https://raw.githubusercontent.com/jbhaywood/foundryvtt-honeyheist/master/system.json",
-  "download": "https://github.com/jbhaywood/foundryvtt-honeyheist/archive/v1.72.zip",
+  "url": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/tree/keira/simplechange/",
+  "manifest": "https://raw.githubusercontent.com/keirashepherd/foundryvtt-yeahnoforsure/refs/heads/keira/simplechange/system.json",
+  "download": "https://github.com/keirashepherd/foundryvtt-yeahnoforsure/archive/refs/heads/keira/simplechange.zip",
   "license": "LICENSE.txt"
 }

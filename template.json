@@ -19,27 +19,27 @@
 					"dtype": "String"
 				},
 				"rookie": {
-					"label": "Rookie",
+					"label": "your ex is here",
 					"dtype": "String"
 				},
 				"washed-up": {
-					"label": "Washed-up",
+					"label": "you called in sick to be here",
 					"dtype": "String"
 				},
 				"retired": {
-					"label": "Retired",
+					"label": "you're injured or hungover",
 					"dtype": "String"
 				},
 				"unhinged": {
-					"label": "Unhinged",
+					"label": "Buddy won't return your ___",
 					"dtype": "String"
 				},
 				"slick": {
-					"label": "Slick",
+					"label": "you have a low social battery",
 					"dtype": "String"
 				},
 				"incompetent": {
-					"label": "Incompetent",
+					"label": "you're secretly 30 years old",
 					"dtype": "String"
 				}
 			},
@@ -49,27 +49,27 @@
 					"dtype": "String"
 				},
 				"grizzly": {
-					"label": "Grizzly (Terrify)",
+					"label": "you're like really funny",
 					"dtype": "String"
 				},
 				"polar": {
-					"label": "Polar (Swim)",
+					"label": "you're Buddy's roommate",
 					"dtype": "String"
 				},
 				"panda": {
-					"label": "Panda (Eat anything that looks like bamboo)",
+					"label": "you're in an indie band",
 					"dtype": "String"
 				},
 				"black": {
-					"label": "Black (Climb)",
+					"label": "you know everyone here",
 					"dtype": "String"
 				},
 				"sun": {
-					"label": "Sun (Sense honey)",
+					"label": "you're a trickshot master",
 					"dtype": "String"
 				},
 				"honey-badger": {
-					"label": "Honey Badger (Carnage)",
+					"label": "you're from Up North",
 					"dtype": "String"
 				}
 			},
@@ -79,27 +79,27 @@
 					"dtype": "String"
 				},
 				"muscle": {
-					"label": "Muscle",
+					"label": "good tunes",
 					"dtype": "String"
 				},
 				"brains": {
-					"label": "Brains",
+					"label": "party games",
 					"dtype": "String"
 				},
 				"driver": {
-					"label": "Driver",
+					"label": "a mickey or two",
 					"dtype": "String"
 				},
 				"hacker": {
-					"label": "Hacker",
+					"label": "brownies (or similar)",
 					"dtype": "String"
 				},
 				"thief": {
-					"label": "Thief",
+					"label": "\"brownies\" (or similar)",
 					"dtype": "String"
 				},
 				"face": {
-					"label": "Face",
+					"label": "a car (don't drink and drive)",
 					"dtype": "String"
 				}
 			},
